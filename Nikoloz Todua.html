@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="nikoloztoduaa_2289563336739084420.svg" />
+    <meta name="author" content="ვახტანგ ჯამბურია">
+    <title>ნიკოლოზ თოდუას ბიოგრაფია</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #ff9a8b, #ff6a88, #d76d77);
+            line-height: 1.6;
+            color: #333;
+            padding-top: 120px; /* Adjusted padding */
+        }
+
+        /* Header Styling */
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            font-size: 2.2rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        /* Navigation Bar Styling */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            position: fixed;
+            top: 90px; /* Adjusted position */
+            left: 0;
+            width: 100%;
+            padding: 12px 0;
+            z-index: 999;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            font-size: 1.1rem;
+            margin: 0 20px;
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ff6a88;
+            transform: translateY(-5px);
+        }
+
+        nav input[type="text"] {
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            font-size: 1rem;
+            margin-right: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav input[type="text"]:focus {
+            background-color: #ff6a88;
+            outline: none;
+        }
+
+        nav button {
+            background-color: #ff9a8b;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav button:hover {
+            background-color: #ff6a88;
+            transform: translateY(-5px);
+        }
+
+        /* Main Content Container */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 200px;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 30px;
+        }
+
+        /* Main Content */
+        .content {
+            flex: 2;
+            background-color: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .content:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .content h1,
+        .content h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            flex: 1;
+            background-color: #333;
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .sidebar:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .sidebar h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 15px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .sidebar ul li a:hover {
+            color: #ff9a8b;
+            transform: translateX(5px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Registration Form Styling */
+        .form-container {
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        .form-box input,
+        .form-box button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .form-box button {
+            background-color: #ff6a88;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-box button:hover {
+            background-color: #ff9a8b;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            header {
+                font-size: 2rem;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .container {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .content,
+            .sidebar {
+                padding: 20px;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>ნიკოლოზ თოდუას ბიოგრაფია</header>
+
+    <nav>
+        <a href="#">ნიკოლოზის დაბადება</a>
+        <a href="#">ნიკოლოზის გაზრდა</a>
+        <a href="#">ნიკოლოზის მოღვაწეობა</a>
+        <a href="#">ამჟამინდელი ნიკოლოზი</a>
+        <input type="text" placeholder="მოძებნეთ ნიკოლოზზე რაიმე">
+        <button>ეცი!</button>
+        <a href="#register">რეგისტრაცია</a> <!-- Registration Link -->
+        <a href="#login">შესვლა</a> <!-- Login Link -->
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h1>თავი 1</h1>
+            <p>ნიკოლოზ თოდუა დაიბადა ,,უცნობია'' გაიზარდა მარტვილის რაიონ სოფელ ტალერში. მან დაიწყო 2015 წელს სწავლა წარჩინებით კერძო სკოლა სხივში იგი ცნობილია მისი გამანადგურებელი აირით</p>
+            <h2>თავი 2</h2>
+            <p>ნიკოლოზი იზრდება ისევ ტალერში</p>
+            <h2>თავი 3</h2>
+            <p>რაოდენ გასაკვირიც არუნდა იყოს ისევ ტალეშია</p>
+            <h2>ნიკოლოზი ახლა კერძო სკოლაშია და ისევ ტალერში ცხოვრობს</h2>
+        </div>
+
+        <div class="sidebar">
+            <h3>დამატებითი ინფორმაცია</h3>
+            <ul>
+                <li><a href="#">ტალერშია ისევ</a></li>
+                <li><a href="#">ყავს ბრატები გიული ჩვენი ძმა</a></li>
+                <li><a href="#">ცხოვრობს მარტვილის რაიონ სოფელ ტალერში</a></li>
+                <li><a href="#">იგი ისევ ტალერშია</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>© 2024 ნიკოლოზ თოდუას ბიოგრაფია</footer>
+
+    <!-- Registration Section -->
+    <section id="register" class="form-container">
+        <div class="form-box">
+            <h2>რეგისტრაცია</h2>
+            <input type="text" placeholder="სახელი">
+            <input type="email" placeholder="ელ. ფოსტა">
+            <input type="password" placeholder="პაროლი">
+            <button>რეგისტრაცია</button>
+        </div>
+    </section>
+
+    <!-- Login Section -->
+    <section id="login" class="form-container">
+        <div class="form-box">
+            <h2>შესვლა</h2>
+            <input type="email" placeholder="ელ. ფოსტა">
+            <input type="password" placeholder="პაროლი">
+            <button>შესვლა</button>
+        </div>
+    </section>
+</body>
+
+</html>

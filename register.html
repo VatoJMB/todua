@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ნიკოლოზ თოდუას ბიოგრაფია</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Body Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #ff7f50; /* Soft coral */
+            color: white;
+            text-align: center;
+            padding: 25px 20px;
+            font-size: 2.2rem;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Navigation Styling */
+        nav {
+            background-color: #ff7f50;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 25px;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f8a5b2; /* Lighter coral */
+        }
+
+        /* Form Container */
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            padding: 20px;
+        }
+
+        .form-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .form-box h2 {
+            margin-bottom: 25px;
+            font-size: 1.6rem;
+            color: #333;
+        }
+
+        .form-box input {
+            width: 100%;
+            padding: 12px;
+            margin: 12px 0;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-size: 1rem;
+            color: #555;
+            transition: all 0.3s ease;
+        }
+
+        .form-box input:focus {
+            border-color: #ff7f50;
+            outline: none;
+        }
+
+        .form-box button {
+            padding: 12px 25px;
+            background-color: #ff7f50;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .form-box button:hover {
+            background-color: #f8a5b2;
+            transform: translateY(-5px);
+        }
+
+        .form-box a {
+            color: #ff7f50;
+            font-size: 1rem;
+            text-decoration: none;
+            margin-top: 15px;
+            display: block;
+        }
+
+        .form-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                font-size: 1.8rem;
+            }
+
+            nav {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+
+            .form-box {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>ნიკოლოზ თოდუას ბიოგრაფია</header>
+
+    <nav>
+        <a href="#bio">ბიოგრაფია</a>
+        <a href="#register">რეგისტრაცია</a>
+        <a href="#login">შესვლა</a>
+    </nav>
+
+    <!-- Биография Section -->
+    <section id="bio" style="padding: 50px 0; text-align: center; background-color: #f2f2f2;">
+        <h2>ნიკოლოზ თოდუას ბიოგრაფია</h2>
+        <p>ნიკოლოზ თოდუა დაიბადა და გაიზარდა ...</p>
+    </section>
+
+    <!-- Регистрация Section -->
+    <div id="register" class="form-container">
+        <div class="form-box">
+            <h2>რეგისტრაცია</h2>
+            <input type="text" placeholder="სახელი" required>
+            <input type="email" placeholder="ელ. ფოსტა" required>
+            <input type="password" placeholder="პაროლი" required>
+            <button>რეგისტრაცია</button>
+            <a href="#login">თუ უკვე გაქვთ ანგარიში, შეხვიდეთ</a>
+        </div>
+    </div>
+
+    <!-- შესვლის ფორმა -->
+    <div id="login" class="form-container">
+        <div class="form-box">
+            <h2>შესვლა</h2>
+            <input type="email" placeholder="ელ. ფოსტა" required>
+            <input type="password" placeholder="პაროლი" required>
+            <button>შესვლა</button>
+            <a href="#register">თუ არ გაქვთ ანგარიში, დარეგისტრირდით</a>
+        </div>
+    </div>
+
+    <footer>© 2024 ნიკოლოზ თოდუას ბიოგრაფია</footer>
+
+</body>
+</html>
